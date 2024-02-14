@@ -65,10 +65,6 @@ header, footer {
   flex-basis: auto;
 }
 
-.headercolumns, .placeholder {
-  height: 36vh;
-}
-
 .headerlogo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -95,6 +91,7 @@ header, footer {
 
 .headerdescription {
   line-height: 1.2;
+  padding: 1rem 0;
 }
 
 .headercontent button {
@@ -111,7 +108,7 @@ header, footer {
   max-height: 100%;
   max-width: 100%;
   background-color: #6D747D;
-  padding: 0 2rem;
+  padding: 0;
   color: #E5E7EB;
 }
 
@@ -158,7 +155,7 @@ main {
   display: flex;
   align-items: center;
   font-size: 2.25rem;
-  padding: 3rem;
+  padding: 3rem 0;
   font-weight: 900;
   color: #1F2937;
 }
@@ -289,7 +286,7 @@ footer {
   }
 
   .content_one_title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .content_one_title_thumbs {
@@ -311,6 +308,10 @@ footer {
   .content_one_thumb_four_describe {
     padding-top: 0.5rem;
     width: 40vw;
+  }
+
+  .content_two_one {
+    font-size: 2rem;
   }
 
   .content_three_frame {
