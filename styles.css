@@ -38,7 +38,7 @@ header, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-bottom: 2rem;
 }
 
 .headertop, .headercontent {
@@ -148,22 +148,21 @@ main {
   align-items: center;
   flex-direction: column;
   width: 80vw;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
 }
 
 .content_one_title {
   display: flex;
   align-items: center;
   font-size: 2.25rem;
-  padding: 3rem 0;
   font-weight: 900;
   color: #1F2937;
+  padding-bottom: 1rem;
 }
 
 .content_one_title_thumbs {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3rem;
   gap: 6dvw;
 }
 
@@ -285,13 +284,17 @@ footer {
     font-size: 2rem;
   }
 
+  .content_one {
+    padding: 2rem 0 3rem;
+  }
+
   .content_one_title {
     font-size: 2rem;
+    padding-bottom: 2rem;
   }
 
   .content_one_title_thumbs {
     flex-direction: column;
-    padding-bottom: 6.25rem;
   }
   
   .content_one_thumb_one,
