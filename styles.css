@@ -43,7 +43,7 @@ header, footer {
 
 .headertop, .headercontent {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 80vw;
   margin-top: 3vh;
@@ -146,13 +146,14 @@ main {
   align-items: center;
   flex-direction: column;
   width: 80vw;
+  height: 80vh;
 }
 
 .content_one_title {
   display: flex;
   align-items: center;
-  height: 20vh;
   font-size: 2.25rem;
+  padding: 3rem;
   font-weight: 900;
   color: #1F2937;
 }
@@ -160,7 +161,7 @@ main {
 .content_one_title_thumbs {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 6.25rem;
+  padding-bottom: 3rem;
   gap: 6dvw;
 }
 
@@ -171,7 +172,7 @@ main {
   width: 13.75vw;
   height: 13.75vw;
   border: 0.25rem solid #3882F6;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .content_one_thumb_one_describe,
@@ -257,4 +258,78 @@ footer {
   justify-content: center;
   align-items: center;
   color: #E5E7EB;
+}
+
+@media only screen and (max-width: 900px) {
+  .signup_two {
+    min-width: 7.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerlinks a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0.1rem;
+  }  
+
+  .headercontent {
+    height: 90dvh;
+    flex-direction: column;
+  }
+
+  .headerlead {
+    font-size: 2rem;
+  }
+
+  .content_one {
+    height: 240vh;
+  }
+
+  .content_one_title {
+    height: 30vh;
+    font-size: 2.25rem;
+  }
+
+  .content_one_title_thumbs {
+    flex-direction: column;
+    padding-bottom: 6.25rem;
+  }
+  
+  .content_one_thumb_one,
+  .content_one_thumb_two,
+  .content_one_thumb_three,
+  .content_one_thumb_four {
+    width: 40vw;
+    height: 40vw;
+  }
+  
+  .content_one_thumb_one_describe,
+  .content_one_thumb_two_describe,
+  .content_one_thumb_three_describe,
+  .content_one_thumb_four_describe {
+    padding-top: 0.5rem;
+    width: 40vw;
+  }
+
+  .content_two {
+    height: 110vh;
+  }
+
+  .content_three_frame {
+    flex-direction: column;
+  }
+
+  .content_three_one {
+    padding: 0.2rem 0;
+  }
+  
+  .content_three_two {
+    padding: 0.2rem 0 0.6rem;
+  }  
+
+  .signup_two {
+    margin-bottom: 0.2rem;
+  }
 }
